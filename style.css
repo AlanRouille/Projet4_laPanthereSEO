@@ -302,7 +302,7 @@ a:hover {
 }
 
 .navbar-brand img {
-    max-height: 200px;
+    max-height: 100px;
     margin: 0 5px 0 0;
     display: inline;
 }
@@ -512,6 +512,20 @@ button {
 
 .form-group label::after {
     content: "*";
+} /*indicateur pour faire voir que les champs du formulaire sont obligatoires */
+
+div.localisation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.localisation p {
+    text-align: center;
+}
+.col-sm-6 iframe {
+    width: 90%;
+    height: 325px;
+    margin: 5px 0 15px 0;
 }
 
 .scrollToTop {
@@ -661,7 +675,9 @@ a {
 .container {
     max-width: 1000px;
 }
-
+.image-resize-mode {
+    width: 100px;
+}
 .hero-bloc-text {
     font-size: 38px;
 }
@@ -703,9 +719,21 @@ p {
     font-weight: 700;
 }
 
+#bloc-8 {
+    padding: 20px 40px;
+}
 .social {
     max-width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     margin: auto auto auto auto;
+}
+.social .col-sm-3 {
+    display: flex;
+    align-items: center;
+    width: 20px;
 }
 
 h2 {
@@ -785,7 +813,7 @@ figure.citation blockquote {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #9b050a; /* changement de la couleur pour avoir un meilleur contraste*/
 }
 
 .tc-white {
@@ -793,12 +821,12 @@ figure.citation blockquote {
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #9b050a;  
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #B01319!important;
     color: #FFFFFF!important;
 }
 
@@ -811,11 +839,11 @@ figure.citation blockquote {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #9b050a!important;
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #c27956!important;
+    color: #B01319!important;
 }
 
 .icon-dark-slate-blue {
@@ -1040,8 +1068,17 @@ figure.citation blockquote {
         width: 180px;
         height: 320px;
     }
+    .img-responsive {
+        width: 70%;
+        height: auto;
+        display: flex;
+        align-items: center;
 }
-
+    .bloc-mob-center-text {
+        text-align: center;
+    }
+}
+    
 @media (max-width: 400px) {
     .bloc {
         padding-left: 0;
@@ -1049,7 +1086,7 @@ figure.citation blockquote {
     }
 }
 
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
     }
