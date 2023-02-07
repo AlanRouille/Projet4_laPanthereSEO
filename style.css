@@ -510,6 +510,10 @@ button {
     box-shadow: none;
 }
 
+.form-group label::after {
+    content: "*";
+}
+
 .scrollToTop {
     width: 40px;
     height: 40px;
