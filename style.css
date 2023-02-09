@@ -283,9 +283,6 @@ a:hover {
     padding-left: 0;
 }
 
-#bloc-1-hero h1 {
-    font-size: 32px;
-}
 
 .navbar {
     margin-bottom: 0;
@@ -302,13 +299,13 @@ a:hover {
 }
 
 .navbar-brand img {
-    max-height: 100px;
+    height: 100px;
     margin: 0 5px 0 0;
     display: inline;
 }
 
 .navbar-brand img[src$=svg] {
-    min-width: 100px;
+    width: 350px;
 }
 
 .nav-center .navbar-brand img {
@@ -316,6 +313,7 @@ a:hover {
 }
 
 .navbar .nav {
+    
     padding-top: 2px;
     margin-right: -16px;
     float: right;
@@ -325,7 +323,7 @@ a:hover {
 .nav > li {
     float: left;
     margin-top: 4px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -335,6 +333,9 @@ a:hover {
 .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #9b050a;
+    
 }
 
 .navbar-toggle {
@@ -550,7 +551,8 @@ div.localisation p {
 
 a[data-lightbox] {
     position: relative;
-    display: block;
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
@@ -742,12 +744,15 @@ h2 {
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
 }
 
+.footer h3 {
+    font-size: 20px;
+}
 .med-width-whitespace {
     max-width: 800px;
     margin: auto auto auto auto;
@@ -779,6 +784,7 @@ figure.citation blockquote {
 }
 .white {
     color: #FFFFFF!important;
+    font-weight: bold;
 }
 
 .portfolio-thumb {
@@ -795,7 +801,7 @@ figure.citation blockquote {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(102, 86, 37, 0.699);
     padding: 40px 40px 40px 40px;
 }
 
@@ -813,20 +819,21 @@ figure.citation blockquote {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #9b050a; /* changement de la couleur pour avoir un meilleur contraste*/
+    background-color: #B01319; /* changement de la couleur pour avoir un meilleur contraste*/
 }
 
 .tc-white {
     color: #FFFFFF!important;
+    font-weight: bold;
 }
 
 .btn-atomic-tangerine {
-    background: #9b050a;  
+    background: #B01319;  
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #B01319!important;
+    background: #9b050a!important;
     color: #FFFFFF!important;
 }
 
@@ -839,11 +846,11 @@ figure.citation blockquote {
 }
 
 .ltc-atomic-tangerine {
-    color: #9b050a!important;
+    color: #B01319!important;
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #B01319!important;
+    color: #9b050a!important;
 }
 
 .icon-dark-slate-blue {
@@ -890,13 +897,13 @@ figure.citation blockquote {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -915,8 +922,8 @@ figure.citation blockquote {
         position: relative;
     }
     .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: 0;
+        padding-right: 20px;
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -926,8 +933,8 @@ figure.citation blockquote {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -1005,7 +1012,7 @@ figure.citation blockquote {
     }
     .navbar-brand img {
         max-height: 40px;
-        width: auto;
+        width: 200px;
     }
     .nav-invert .navbar-header {
         float: none;

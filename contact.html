@@ -13,12 +13,13 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	
     
-a	<script src="./js/jquery-2.1.0.js"></script>
+	<script src="./js/jquery-2.1.0.js"></script>
 	<script src="./js/bootstrap.js"></script>
 	<script src="./js/blocs.js"></script>
 	<script src="./js/jqBootstrapValidation.js"></script>
 	<script src="./js/formHandler.js"></script>
-    <title>Agence Web Design - La Panthère: Contactez-nous</title>
+
+  <title>Agence Web Design - La Panthère: Contactez-nous</title>
 
     
 <!-- Analytics -->
@@ -42,14 +43,8 @@ a	<script src="./js/jquery-2.1.0.js"></script>
 			</div>
 			<nav class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 				<ul class="site-navigation nav navbar-nav">
-					<li>
-						<a href="index.html" alt="Lien vers la page accueil du site">Accueil</a>
-					</li>
-					<li>
-					</li>
-					<li>
-						<a href="contact.html"alt="Lien vers la page Contact du site">Contact</a>
-					</li>
+					<li><a href="index.html" alt="Lien vers la page accueil du site">Accueil</a></li>
+					<li><a href="contact.html"alt="Lien vers la page Contact du site">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -63,8 +58,7 @@ a	<script src="./js/jquery-2.1.0.js"></script>
 		<div class="row">
 			<div class="col-sm-12">
 				<h1 class="text-center hero-bloc-text tc-white">
-					Parlons web design !
-				</h1>
+					Parlons web design !</h1>
 				<p class="text-center mg-lg tc-white tight-width-whitespace">
 					Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
 					Parlez-nous de votre projet en complétant le formulaire ci-dessous.
@@ -82,27 +76,19 @@ a	<script src="./js/jquery-2.1.0.js"></script>
 			<div class="col-sm-6">
 				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 					<div class="form-group">
-						<label>
-							Nom
-						</label>
-						<input id="name" class="form-control" required />
+						<label for="name">Nom</label>
+						<input id="name" class="form-control" type="text" placeholder="Rouillé Alan" required />
 					</div>
 					<div class="form-group">
-						<label>
-							Adresse email
-						</label>
-						<input id="email" class="form-control" type="email" required />
+						<label for="email"">Adresse email</label>
+						<input id="email" class="form-control" placeholder="exemple@gmail.com" type="email" required />
 					</div>
 					<div class="form-group">
-						<label>
-							Comment nous avez-vous connu ?
-						</label>
-						<input class="form-control" type="email" required id="input_504" />
+						<label for="input_504">Comment nous avez-vous connu ?</label>
+						<input id="input_504" class="form-control" type="text" placeholder="Réseau Social, TV,..." required  />
 					</div>
 					<div class="form-group">
-						<label>
-							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+						<label for="message">Description de votre projet</label><textarea id="message" class="form-control" rows="4" cols="50" placeholder="Création d'un site vitrine, Refont d'un site web,..." required></textarea>
 					</div> 
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
@@ -110,7 +96,7 @@ a	<script src="./js/jquery-2.1.0.js"></script>
 				</form>
 			</div>
 			<div class="col-sm-6 localisation"> <!-- Ajout de google maps + titre h2-->
-				<h2>Venez nous voir pour parler</h2>
+				<h2>Venez nous voir pour en parler</h2>
 				<iframe aria-label="carte de google map localisant l'agence La Panthère" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.0829506504883!2d4.827983980352861!3d45.76952782114056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb020f3664e9%3A0x13e3d71752922c1f!2s2%20Pl.%20Sathonay%2C%2069001%20Lyon!5e0!3m2!1sfr!2sfr!4v1675766409121!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				<p>
 					contact@agencelapanthere.com<br><strong> 2 place Sathonay 69001 Lyon</strong><br>Ouvert de 9h à 18h, du lundi au vendredi<br>
@@ -122,7 +108,7 @@ a	<script src="./js/jquery-2.1.0.js"></script>
 <!-- bloc-7 END -->
 
 <!-- ScrollToTop Button -->
-<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+<a class="bloc-button btn btn-d scrollToTop" aria-label="haut de page"onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
 <!-- ScrollToTop Button END-->
 
 
@@ -137,22 +123,22 @@ a	<script src="./js/jquery-2.1.0.js"></script>
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html" aria-label="Twitter"><span class="fa fa-twitter icon-md"></span></a>
+							<a class="social" href="https://twitter.com/?lang=fr" aria-label="Twitter"><span class="fa fa-twitter icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html" aria-label="Facebook"><span class="fa fa-facebook icon-md"></span></a>
+							<a class="social" href="https://www.facebook.com/" aria-label="Facebook"><span class="fa fa-facebook icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html" aria-label="Driblle"><span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social" href="https://dribbble.com/" aria-label="Driblle"><span class="fa fa-dribbble icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html" aria-label="Instagram"><span class="fa fa-instagram icon-md"></span></a>
+							<a class="social" href="https://www.instagram.com/?hl=fr" aria-label="Instagram"><span class="fa fa-instagram icon-md"></span></a>
 						</div>
 
 					</div>
