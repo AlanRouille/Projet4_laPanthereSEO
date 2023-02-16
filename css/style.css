@@ -69,7 +69,7 @@ body{
   background:top no-repeat
   }
   
-  .bloc-bg-texture::before{
+  /*.bloc-bg-texture::before{
   content:"";
   background-size:2px 2px;
   position:absolute;
@@ -82,7 +82,7 @@ body{
   .texture-paper::before{
   background:url(../img/texture-paper.webp);
   background-size:280px 280px
-  }
+  }*/
   
   .b-parallax{
   background-attachment:fixed
