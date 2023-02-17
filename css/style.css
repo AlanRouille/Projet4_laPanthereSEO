@@ -821,10 +821,10 @@ body{
     background-attachment:scroll
     }
     .bg-banniere {
-      background-image: url("/img/agence-la-panthere-small.webp")
+      background-image: url("../img/agence-la-panthere-small.webp")
     }
     .bg-presentation{
-      background-image: url("/img/image-de-presentation-small.webp");
+      background-image: url("../img/image-de-presentation-small.webp");
     }
     }
     
