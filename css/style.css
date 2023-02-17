@@ -801,56 +801,62 @@ body{
   }
   
   @media (max-width:992px) and (min-width:768px){
-  .navbar .nav{
-  max-width:80%
-  }
-  
-  .nav-center.navbar .nav{
-  max-width:100%
-  }
-  }
-  
-  @media only screen and (min-width:768px) and (max-width:1024px) and (orientation:landscape){
-  .b-parallax{
-  background-attachment:scroll
-  }
-  }
-  
-  @media only screen and (min-width:1024px) and (max-width:1366px) and (-webkit-min-device-pixel-ratio:1.5){
-  .b-parallax{
-  background-attachment:scroll
-  }
-  }
-  
-  @media (max-width:991px){
-  .container{
-  width:100%
-  }
-  
-  .b-parallax{
-  background-attachment:scroll
-  }
-  
-  .page-container,#hero-bloc{
-  overflow-x:hidden;
-  position:relative
-  }
-  
-  .bloc{
-  padding-left:0;
-  padding-right:20px
-  }
-  
-  .bloc-group,.bloc-group .bloc{
-  display:block;
-  width:100%
-  }
-  
-  .bloc-fill-screen .fill-bloc-top-edge,.bloc-fill-screen .fill-bloc-bottom-edge{
-  padding:0 20px;
-  padding-left:20px;
-  padding-right:20px
-  }
+    .navbar .nav{
+    max-width:80%
+    }
+    
+    .nav-center.navbar .nav{
+    max-width:100%
+    }
+    }
+    
+    @media only screen and (min-width:768px) and (max-width:1024px) and (orientation:landscape){
+    .b-parallax{
+    background-attachment:scroll
+    }
+    }
+    
+    @media only screen and (min-width:1024px) and (max-width:1366px) and (-webkit-min-device-pixel-ratio:1.5){
+    .b-parallax{
+    background-attachment:scroll
+    }
+    .bg-banniere {
+      background-image: url("/img/agence-la-panthere-small.webp")
+    }
+    .bg-presentation{
+      background-image: url("/img/image-de-presentation-small.webp");
+    }
+    }
+    
+    @media (max-width:991px){
+    .container{
+    width:100%
+    }
+    
+    .b-parallax{
+    background-attachment:scroll
+    }
+    
+    .page-container,#hero-bloc{
+    overflow-x:hidden;
+    position:relative
+    }
+    
+    .bloc{
+    padding-left:0;
+    padding-right:20px
+    }
+    
+    .bloc-group,.bloc-group .bloc{
+    display:block;
+    width:100%
+    }
+    
+    .bloc-fill-screen .fill-bloc-top-edge,.bloc-fill-screen .fill-bloc-bottom-edge{
+    padding:0 20px;
+    padding-left:20px;
+    padding-right:20px
+    }
   }
   
   @media (max-width:767px){
@@ -1024,8 +1030,16 @@ body{
   }
   
   @media (max-width:400px){
-  .bloc{
-  padding-left:0;
-  padding-right:0
+    .bloc{
+    padding-left:0;
+    padding-right:0
+    }
   }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .bg-banniere {
+      background-image: url("/img/agence-la-panthere-small.webp")
+    }
+    .bg-presentation{
+      background-image: url("/img/image-de-presentation-small.webp");
+    }
   }
