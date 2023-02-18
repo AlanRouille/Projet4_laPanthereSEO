@@ -191,6 +191,17 @@ body{
   margin-top:80px
   }
   
+  .row {
+    margin-bottom: 80px;
+  }
+
+  .col-sm-4 {
+    margin-bottom: 30px;
+  }
+
+.col-sm-12 h3 {
+  margin-bottom: 40px;
+}
   .row-no-gutters{
   margin-right:0;
   margin-left:0
@@ -986,14 +997,14 @@ body{
   }
   
   .voffset{
-  margin-top:5px
+  margin-top:80px
   }
   
   .voffset-md{
   margin-top:20px
   }
   
-  .voffset-lg{
+  .voffset-alg{
   margin-top:30px
   }
   
